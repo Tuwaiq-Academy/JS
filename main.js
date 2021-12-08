@@ -659,6 +659,101 @@
 
 
 // ----------------------DOM----------------------
-const fisrt=document.querySelector('#a1').innerHTML;
+// const fisrt=document.querySelector('#a1').innerHTML;
+// const fr=document.querySelector('#b2');
+// const fi=document.querySelector('#c3');
+// const fis=document.querySelector('#d4');
+// const fisr=document.querySelector('#f5');
+// const v=document.querySelectorAll('p')[1];
+// console.log(fi.innerText);
 
-console.log(fisrt);
+
+// const bi=getComputedStyle(fi);
+// // console.log(bi);
+// console.log(bi.color);
+// fi.style.color ='black';//"""" FI """هااااااااااااااااااااااااااااااااااااممممممممممممممم التعديل بيكون عن طريق اسم النود
+// console.log(bi.color);
+
+// fi.getAttribute('id')   // للخصول على قيمة الid
+// fi.setAttribute('id','a1') //لتغيير قيمة الid
+
+
+
+
+// const br=document.querySelector('#s4');
+// br.setAttribute('type','text')
+
+// const one=document.querySelector('#b2');
+
+// const hgfa=document.querySelector("#hgf");
+
+
+//  function action1(){
+
+//     console.log("clear");
+//     document.querySelector("#hgf").innerHTML="fffffffffffffff";
+//  }
+
+//  hgfa.addEventListener('click',action1)
+
+// // ------------------------
+
+// const ss=document.querySelector("#ss");
+// const ssss=document.querySelector("#sss");
+// const s4=document.querySelector("#s44");
+// const k=document.querySelector("#k");
+
+// const users=[{User:"nour", pass:"123"}
+// ,{User:"nnn", pass:"111"}
+// , {User:"nano", pass:"1234"}];
+
+
+
+// function help(){
+// const i1=document.querySelector("#ss").value;
+// const i2=document.querySelector("#sss").value;
+
+//     for(let i = 0; i<=users.length ; i++){
+//         if(i1===users[i].User && i2===users[i].pass){
+//             k.innerText="success"
+//             return;
+//         }}
+        
+        
+//         k.innerText="failled"
+//         return;
+//     }
+//     // k.innerText="failled"
+//     // return
+
+
+            
+            
+
+// s4.addEventListener('click',help)
+
+
+// ------------------------------------------EX-------------------
+const Use=[{name:"nour", pass:"12"},{name:"noura", pass:"1452"}];
+
+const A1=document.querySelector("#A1");
+const B2=document.querySelector("#B2");
+const C3=document.querySelector("#C3");
+const D4=document.querySelector("#D4");
+
+function Exam(){
+
+    const Az=document.querySelector("#A1").value;
+    const Ab=document.querySelector("#B2").value;
+
+    for(let i = 0; i < Use.length; i++){
+    if(document.querySelector("#A1").value===Use[0].name && document.querySelector("#B2").value===Use[0].pass){
+            D4.innerText="Success"
+            return;
+    }
+}
+D4.innerText="Failled"
+return;
+}
+
+C3.addEventListener('click',Exam);
